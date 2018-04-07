@@ -1,0 +1,141 @@
+body {
+    font-family: 'Armata', sans-serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Aldrich', sans-serif
+}
+
+.crt-logo {
+    font-family: 'Pacifico', handwriting
+}
+
+.text-primary, .crt-icon-list .crt-icon, .post-title a:hover, .crt-nav .menu-item-object-post.current-menu-item a, .crt-nav .menu-item-object-page.current-menu-item a, .crt-nav .menu-item-object-category.current-menu-item a, .fc-state-active, .fc-state-active .fc-button-inner {
+    color: #1FA184
+}
+
+mark, input[type='submit'], .bg-primary, .btn-primary, .bg-primary.text-dropcup-sq, .raiting-circle .fill, .progress-bullets .bullet.fill, .tabs .tabs-menu li.active a, .tabs .tabs-menu li a:hover, .togglebox-header:before, .accordion-header:before, .education:before, .education-date, .widget_calendar tbody a, #crtMainNav .sub-menu li > a:hover, #crtMainNav .sub-menu .current-menu-item > a, #crtMainNavSm .sub-menu:before, .apcal_btn-primary, .apcal_btn-primary:hover, #buttonbox .apcal_btn-success, #buttonbox .apcal_btn-success:hover, .apcal_alert-info {
+    background-color: #1FA184
+}
+
+.btn-bordered, .brd-primary, #crtNavSm .current a, #crtNavSm .menu-item-object-post.current-menu-item a, #crtNavSm .menu-item-object-page.current-menu-item a, #crtNavSm .menu-item-object-category.current-menu-item a, .progress-bullets .bullet, .education-date:after, .education-date:before, .apcal_modal-body .apcal_alert-info {
+    border-color: #1FA184
+}
+
+::-moz-selection {
+    background-color: #1FA184
+}
+
+::selection {
+    background-color: #1FA184
+}
+
+.crt-card, .btn-primary, input[type='submit'], .education-date, .apcal_btn-primary, .apcal_btn-primary:hover, #buttonbox .apcal_btn-success, #buttonbox .apcal_btn-success:hover, .apcal_alert-info, .tabs .tabs-menu li.active a, .tabs .tabs-menu li a:hover, .accordion-header, .togglebox-header {
+    color: #FFF
+}
+
+::-moz-selection {
+    color: #FFF
+}
+
+::selection {
+    color: #FFF
+}
+
+.bg-primary .btn-bordered {
+    border-color: #FFF;
+    color: #FFF
+}
+
+body, blockquote.quote-top:before, blockquote.quote-side:before, .form-item, .crt-logo, .page-numbers:hover, .page-numbers.current, .tabs .tabs-menu a, .crt-nav a, .crt-tooltip, #crtMainNav .sub-menu a, #crtMainNav > ul > li > a:hover, #crtMainNav > ul > li.current-menu-item > a, #crtMainNav > ul > li.current-menu-parent > a, #crtMainNavSm li > a:hover, #crtMainNavSm li.current-menu-item a, #crtMainNavSm li.current-menu-parent a, .accordion li.active .accordion-header, .accordion-header:hover, .togglebox li.active .togglebox-header, .togglebox-header:hover, .pf-filter button, .search-title span, .widget_archive a, .widget_categories a {
+    color: #FFF
+}
+
+::-webkit-input-placeholder {
+    color: #FFF
+}
+
+::-moz-placeholder {
+    color: #FFF
+}
+
+:-ms-input-placeholder {
+    color: #FFF
+}
+
+:-moz-placeholder {
+    color: #FFF
+}
+
+.text-dropcup-sq, .styled-ul li:before, .education-box:before {
+    background-color: #FFF
+}
+
+.text-muted, .post-content, .page-numbers, .education-company, .ref-author span, table > thead > tr > th, .styled-ul > li > ul ul, #crtMainNav > ul > li > a, #crtMainNavSm a, .cr-carousel .slick-next:before, .cr-carousel .slick-prev:before, .widget-title, .widget_archive li, .widget_categories li, .widget_recent_entries .post-date, .post-category-comment a, #timesloatbox, .apcal_modal-info .icon-remove {
+    color: #757575
+}
+
+.styled-ul > li > ul ul li:before {
+    background-color: #757575
+}
+
+hr, th, td, blockquote, .brd-btm, .post-tags a, .reference-box, .crt-head-inner, .crt-paper, .crt-paper-layers:after, .crt-paper-layers:before, #comments .comment-list, #comments .comment-body, .crt-nav-type1 .crt-nav-cont, .tabs .tabs-menu, .tabs-vertical:before, .page-category .post-footer, .search-for, .widget_meta > ul, .widget_pages > ul, .widget_archive > ul, .widget_nav_menu .menu, .widget_categories > ul, .widget_recent_entries > ul, .widget_recent_comments > ul, .widget_meta li, .widget_pages li, .widget_archive li, .widget_nav_menu li, .widget_categories li, .widget_recent_entries li, .widget_recent_comments li, .widget_calendar caption, .widget_tag_cloud a, .post-category-comment a, .apcal_modal, .apcal_btn#next1, .apcal_btn#back {
+    border-color: #2C363B
+}
+
+.crt-nav-btm:after {
+    background-color: #2C363B
+}
+
+.post-line {
+    color: #2C363B
+}
+
+#crtBgShape1 polygon {
+    fill: #0F171B
+}
+
+#crtBgShape2 polygon {
+    fill: #1FA184
+}
+
+body, select, textarea, input[type='url'], input[type='tel'], input[type='time'], input[type='text'], input[type='email'], input[type='number'], input[type='search'], input[type='password'], input[type='week'], input[type='date'], input[type='datetime'], input[type='datetime-local'], input[type='month'], .form-item, .widget_search input[type="text"], .fc-state-highlight {
+    background-color: #121F26
+}
+
+.text-dropcup-sq {
+    color: #313C42
+}
+
+.crt-head-inner, .crt-card-footer, blockquote.quote-top:before, blockquote.quote-side:before, .tooltip:after, .education-box:last-child:after, .crt-nav-type1 .crt-nav-cont, #crtMainNav .sub-menu, .crt-tooltip:after, #crtSidebar, .pf-popup-content, .cr-carousel .slick-next, .cr-carousel .slick-prev, .crt-side-box-1, .crt-side-box-2, .crt-side-box-2 .widget, #crtContainer, .crt-paper, .crt-paper-layers:after, .crt-paper-layers:before, #crtSidebarBtn, #crtSidebarClose, .crt-side-box-1 #sticky-widget-inner {
+    background-color: #313C42
+}
+
+.tooltip:before {
+    border-top-color: #313C42
+}
+
+.crt-nav-type1 .crt-nav-btm, .crt-tooltip.arrow-right:before {
+    border-left-color: #313C42
+}
+
+.crt-tooltip.arrow-left:before {
+    border-right-color: #313C42
+}
+
+.btn-default {
+    background-color: #DEC746
+}
+
+.btn-default {
+    color: #000
+}
+
+.btn-secondary {
+    background-color: #000
+}
+
+.btn-secondary {
+    color: #FFF
+}
+

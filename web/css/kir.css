@@ -1,0 +1,125 @@
+.textwidget{
+    margin: 0 auto;
+    width: 200px;
+    margin-top: 20px;
+}
+
+body{
+    background: #ffa;
+}
+
+.widget_text .btn-default {
+    background-color: #DEC746;
+}
+
+.crt-social a{
+    font-size: 18px;
+}
+
+.crt-card-info  .crt-social li{
+    margin: 5px 4px;
+}
+
+#crtNavWrap .crt-nav-cont li a{
+    font-size: 25px;
+}
+
+#about .title-lg.text-upper{
+    margin-bottom: 30px;
+}
+
+#skills .progress-bullets {
+    margin-bottom: 10px;
+}
+
+#skills  .progress-title {
+    font-size: 0.85em;
+    line-height: 1.2em;
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+#skills .dl-horizontal dd{
+    margin-bottom: 10px;
+}
+
+#data .progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+
+#data .progress-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: #1FA184;
+    transition: width .6s ease;
+    padding: 3px 0;
+}
+
+#contacts .contact-head{
+    margin: 0;
+}
+
+#contacts .padd-box-sm{
+    margin:0;
+}
+
+#contacts .contact-head .crt-social{
+    margin: 0;
+}
+
+#contacts .crt-social li:first-child{
+    margin-left: 0;
+}
+
+#contacts input[type=submit]{
+    background-color: #1FA184;
+}
+
+#crtNavInner{
+    position: fixed;
+}
+
+
+.pf-figure img{
+    width: 380px;
+    height: 253px;
+}
+
+/*article .pf-design{*/
+    /*position: relative;*/
+/*}*/
+
+article .pf-design:hover .pf-project{
+    /*display: none;*/
+}
+
+article .pf-design:hover .pf-caption{
+
+}
+
+.pf-btn.btn.btn-primary{
+    background-color: #1FA184;
+}
+
+.pf-design .btn-primary {
+    padding: 10px 20px;
+    border-radius: 19px;
+}
