@@ -1,10 +1,9 @@
 <?php
 
-namespace CvBundle;
+namespace BlogBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class CvBundle extends Bundle
+class BlogBundle extends Bundle
 {
-
 }

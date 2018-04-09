@@ -1,40 +1,34 @@
-<?php
-use Illuminate\Support\Facades\DB;
-
-$works = DB::table('works')->get();
-$educations = DB::table('educations')->get();
-?>
 <div class="crt-paper-layers crt-animate experience">
     <div class="crt-paper clear-mrg clearfix">
         <div class="crt-paper-cont paper-padd clear-mrg">
             <section id="exp" class="section padd-box brd-btm"><h2 class="title-lg text-upper">Опыт работы</h2>
                 <div class="education">
-                    @foreach($works as $work)
+                    {% for work in works %}
                         <div class="education-box"><span
-                                    class="education-date"> <span>{{$work->interval_work}}</span> </span>
-                            <h3>{{$work->post}}</h3>
+                                    class="education-date"> <span>{{work.intervalWork}}</span> </span>
+                            <h3>{{work.post}}</h3>
                             <a href="https://themeforest.net/user/px-lab/portfolio"> <span
-                                        class="education-company">{{$work->company}}</span> </a>
-                            <p>{{$work->description}}</p>
+                                        class="education-company">{{work.company}}</span> </a>
+                            <p>{{work.description}}</p>
                         </div>
-                    @endforeach
+                    {% endfor %}
                 </div>
             </section>
             <section id="timeline" class="section padd-box"><h2 class="title-lg text-upper">Образование</h2>
                 <div class="education">
-                    @foreach($educations as $education)
+                    {% for education in educations %}
                         <div class="education-box">
                             <span class="education-date">
-                                <span>{{$education->interval_work}}</span>
+                                <span>{{education.intervalWork}}</span>
                             </span>
                             <h3>
-                                <a href="https://themeforest.net/user/px-lab?ref=PX-lab">{{$education->speciality}}</a>
+                                <a href="https://themeforest.net/user/px-lab?ref=PX-lab">{{education.speciality}}</a>
                             </h3>
                             <a href="https://themeforest.net/user/px-lab?ref=PX-lab">
-                                <span class="education-company">{{$education->university}}</span>
+                                <span class="education-company">{{education.univiersity}}</span>
                             </a>
                         </div>
-                    @endforeach
+                    {% endfor %}
                 </div>
             </section>
         </div>

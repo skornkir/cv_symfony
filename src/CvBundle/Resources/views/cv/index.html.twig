@@ -1,0 +1,21 @@
+{% extends "@Cv/cv/layout.html.twig" %}
+
+
+{% block content %}
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
+    {% include '@Cv/cv/content/about.html.twig' %}
+    {% include '@Cv/cv/content/personal.html.twig' %}
+    {% include '@Cv/cv/content/experience.html.twig' %}
+    {% include '@Cv/cv/content/contact.html.twig' %}
+{% endblock %}
+{#@section('content')#}
+    {#@include('cv.content.personal')#}
+    {#@include('cv.content.experience')#}
+    {#@include('cv.content.portfolio')#}
+    {#@include('cv.content.contact')#}
+{#@endsection#}
+
