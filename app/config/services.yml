@@ -17,11 +17,15 @@ services:
            - { name: sonata.admin, manager_type: orm, group: Main, label: Work }
         public: true
     admin.contact:
-            class: CvBundle\Admin\ContactAdmin
-            arguments: [~, CvBundle\Entity\Contact, ~]
-            tags:
-               - { name: sonata.admin, manager_type: orm, group: Main, label: Contact }
-            public: true
+          class: CvBundle\Admin\ContactAdmin
+          arguments: [~, CvBundle\Entity\Contact, ~]
+          tags:
+             - { name: sonata.admin, manager_type: orm, group: Main, label: Contact }
+          public: true
+  #   admin.blog:
+
+
+
     # default configuration for services in *this* file
     _defaults:
         # automatically injects dependencies in your services

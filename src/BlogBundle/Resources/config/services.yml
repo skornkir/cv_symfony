@@ -1,4 +1,7 @@
 services:
-#    blog.example:
-#        class: BlogBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    admin.blog:
+        class: BlogBundle\Admin\BlogAdmin
+        arguments: [~, BlogBundle\Entity\Blog, ~]
+        tags:
+           - { name: sonata.admin, manager_type: orm, group: Main, label: Blog }
+ #       public: true

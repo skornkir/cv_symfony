@@ -1,5 +1,44 @@
 {% extends '@Cv/cv/layout.html.twig' %}
 
 {% block content %}
-    blog
+    {% for blog in blogs %}
+        <div class="crt-paper-layers crt-animated">
+            <div class="crt-paper clearfix">
+                <div class="crt-paper-cont paper-padd clear-mrg">
+                    <article id="post-80"
+                             class="post-80 post type-post status-publish format-standard hentry category-category-1 tag-certy tag-cv tag-experience tag-online tag-resume">
+                        <div class="padd-box-sm">
+                            <header class="post-header text-center">
+                                <h2 class="post-title entry-title text-upper">
+                                    <a rel="bookmark" href={{ path('blogId',{'id' : blog.id}) }}>
+                                        {{ blog.title }}
+                                    </a>
+                                </h2>
+                                <div class="post-header-info">
+                                    <span class="posted-on"><span class="screen-reader-text">Posted on</span>
+                                        <time class="post-date published updated" datetime="2017-06-20T11:59:47+00:00">{{ blog.created | date('M d, Y') }}</time>
+                                    </span>
+                                </div>
+                            </header>
+                            <div class="post-content entry-content editor clearfix clear-mrg">
+                                <p>
+                                    {{ blog.text |slice(0, 400) }}
+                                </p>
+                            </div>
+                            <footer class="post-footer">
+                                <div class="post-footer-top brd-btm clearfix">
+                                    <div class="post-footer-info">
+                                        <span class="post-line">|</span>
+                                    </div>
+                                    <div class="post-more">
+                                        <a class="btn btn-sm btn-primary" href={{ path('blogId',{'id' : blog.id}) }}rel="bookmark">Подробнее</a>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
 {% endblock %}

@@ -1,0 +1,28 @@
+{% extends '@Cv/cv/layout.html.twig' %}
+
+{% block content %}
+    <div class="crt-paper-layers">
+        <div class="crt-paper clearfix">
+            <div class="crt-paper-cont paper-padd clear-mrg">
+                <article id="post-80"
+                         class="post-80 post type-post status-publish format-standard hentry category-category-1 tag-certy tag-cv tag-experience tag-online tag-resume">
+                    <div class="padd-box-sm">
+                        <header class="post-header text-center">
+                            <h2 class="post-title entry-title text-upper">
+                                <span rel="bookmark">  {{ blog.title }} </span>
+                            </h2>
+                            <div class="post-header-info">
+                                <span class="posted-on">
+                                    <a><time class="post-date published updated" datetime="2017-06-20T11:59:47+00:00">June 20, 2017</time></a>
+                                </span>
+                            </div>
+                        </header>
+                        <div class="post-content entry-content editor clearfix clear-mrg">
+                            {{ blog.text }}
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+{% endblock %}

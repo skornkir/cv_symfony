@@ -13,7 +13,30 @@ class BundleController extends Controller
      */
     public function showAction()
     {
-        return $this->render('@Blog/Bundle/show.html.twig');
+        $blogs = $this->getBlogs();
+        return $this->render('@Blog/Bundle/show.html.twig',[
+            'blogs' => $blogs,
+        ]);
+    }
+
+    /**
+     * @Route("blog/{id}", name="blogId")
+     */
+    public function showArticleAction($id){
+        $blog = $this->getBlogById($id);
+        return $this->render('@Blog/Bundle/showBlog.html.twig', [
+           'blog' => $blog,
+        ]);
+    }
+
+    function getBlogById($id){
+        $entityManager = $this->getDoctrine()->getManager();
+        return $entityManager->getRepository('BlogBundle:Blog')->find($id);
+    }
+
+    function getBlogs(){
+        $entityManager = $this->getDoctrine()->getManager();
+        return $entityManager->getRepository('BlogBundle:Blog')->findAll();
     }
 
 }
