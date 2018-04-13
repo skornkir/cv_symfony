@@ -16,7 +16,14 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
     <script type="text/javascript" src={{asset('js/contacts.js')}}></script>
+    {% stylesheets filter='less' output='css/main.css' '@CvBundle/Resources/public/less/*' %}
+        <link href="" type="text/css" rel="stylesheet" media="all" />
+    {% endstylesheets %}
+    {% javascripts '@CvBundle/Resources/public/js/*' %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
 
+    {
 </head>
 <body class="home page-template-default page page-id-90 wp-custom-logo crt crt-layers-1 crt-nav-on crt-nav-type2 crt-main-nav-on crt-side-box-on crt-sidebar-on"
       data-color="#1FA184">
@@ -26,7 +33,6 @@
         {{ include('@Cv/cv/sidebar.html.twig') }}
         {{ include('@Cv/cv/menu.html.twig') }}
         <div class="crt-container-sm">
-            {#@yield('content')#}
             {% block content %}
             {% endblock %}
         </div>

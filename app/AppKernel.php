@@ -25,6 +25,9 @@ class AppKernel extends Kernel
             new CvBundle\CvBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new BlogBundle\BlogBundle(),
+
+            //Assetic
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

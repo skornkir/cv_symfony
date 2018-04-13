@@ -12,6 +12,8 @@ parameters:
 
 framework:
     #esi: ~
+    templating:
+        engines: ['twig']
     translator: { fallbacks: ['%locale%'] }
     secret: '%secret%'
     router:
@@ -75,3 +77,18 @@ sonata_block:
             contexts: [admin]
 
         # ...
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: '%kernel.debug%'
+    filters:
+        cssrewrite: ~
+        less:
+          node: 'C:/Program Files/nodejs/node.exe'
+          node_paths: ["%kernel.root_dir%/../node_modules"]
+#          - "%kernel.root_dir%/../../../node_modules"
+#assetic:
+#   debug:          '%kernel.debug%'
+#   use_controller: '%kernel.debug%'
+#   filters:
+#     cssrewrite: ~
+
