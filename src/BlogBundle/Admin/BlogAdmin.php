@@ -18,11 +18,11 @@ class BlogAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper->add('title', TextType::class);
-    //    $formMapper->add('text', TextareaType::class);
-        $formMapper->add('text', SimpleFormatterType::class, array(
-            'format' => 'markdown',
-       //     'ckeditor_context' => 'default', // optional
-        ));
+        $formMapper->add('text', TextareaType::class);
+//        $formMapper->add('text', SimpleFormatterType::class, array(
+//            'format' => 'markdown',
+//       //     'ckeditor_context' => 'default', // optional
+//        ));
         $formMapper->add('tags', TextType::class);
         $formMapper->add('created', IntegerType::class);
     }

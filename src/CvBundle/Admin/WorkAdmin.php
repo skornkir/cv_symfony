@@ -2,6 +2,7 @@
 
 namespace CvBundle\Admin;
 
+use CvBundle\Entity\Portfolio;
 use Doctrine\DBAL\Types\IntegerType;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
